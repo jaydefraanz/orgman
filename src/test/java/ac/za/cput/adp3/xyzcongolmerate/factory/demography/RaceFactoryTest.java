@@ -9,7 +9,7 @@ public class RaceFactoryTest {
     //TODO: implement method body ONLY!
     @Test
     public void buildRace() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        throw new UnsupportedOperationException("Not supported yet. Now");
         /**
          * Your implementation goes here
          *
