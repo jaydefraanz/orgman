@@ -16,41 +16,24 @@ public class Helper {
         String className = getClassName(aClass);
 
         char[] splitName;
-        char[] upperCaseLetters = null;
-        String processResults;
+
+        String processResults = "";
 
         if(className != null)
         {
             splitName = className.toCharArray();
-            upperCaseLetters = new char[splitName.length];
 
-            for (int i = 0; i <= splitName.length; i++)
+            for (int i = 0; i < splitName.length; i++)
             {
-                char one = splitName[i];
-
-                if(Character.isUpperCase(one))
+                if(Character.isUpperCase(splitName[i]))
                 {
-                    if (upperCaseLetters.length == 0) {
-                        upperCaseLetters[0] = one;
-                    }
-                    else{
-                        upperCaseLetters[upperCaseLetters.length+1] = one;
-                    }
+                    //Add individual letters to current string value
+                    processResults = processResults + "" +splitName[i];
                 }
             }
         }
-
-        //Chars to be returned as String
-        processResults = upperCaseLetters.toString();
+        //concatenated string of capital letters returned
         return processResults;
-
-
-        /**
-         * Your implementation goes here
-         *
-         * INSTRUCTION
-         * 1. Remove line 17 [throw new UnsupportedOperationException("Not yet supported!");]
-         * 2. Get the capitalized letter(s) from the className and return it.
-         */
     }
+
 }
