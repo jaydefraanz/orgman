@@ -13,8 +13,7 @@ public class UserFactoryTest {
     public void buildUser() {
         User user = UserFactory.buildUser("abc@dfg.com","Pete","Next");
 
-        System.out.println(user.toString());
-
+        Assert.assertEquals(user,user);
         Assert.assertNotNull(user);
     }
 }

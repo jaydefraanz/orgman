@@ -15,8 +15,7 @@ public class UserDemographyFactoryTest {
     public void buildUserDemography() {
         UserDemography userDemography =  UserDemographyFactory.buildUserDemography("jay@mail.com","Mr","Male","Clrd",new Date());
 
-        System.out.println(userDemography.toString());
-
+        Assert.assertEquals(userDemography,userDemography);
         Assert.assertNotNull(userDemography);
     }
 }

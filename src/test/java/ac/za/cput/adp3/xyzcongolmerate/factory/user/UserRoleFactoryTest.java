@@ -13,8 +13,7 @@ public class UserRoleFactoryTest {
     public void buildUserRole() {
         UserRole userRole = UserRoleFactory.buildUserRole("345","k@mart.com","admin");
 
-        System.out.println(userRole);
-
+        Assert.assertEquals(userRole, userRole);
         Assert.assertNotNull(userRole);
     }
 }

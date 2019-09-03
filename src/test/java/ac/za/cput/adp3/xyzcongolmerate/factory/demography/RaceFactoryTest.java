@@ -13,8 +13,7 @@ public class RaceFactoryTest {
     public void buildRace() {
         Race race = RaceFactory.buildRace("coloured");
 
-        System.out.println(race.getRaceId());
-
+        Assert.assertSame(race,race);
         Assert.assertFalse(race.getRaceId().isEmpty());
     }
 }

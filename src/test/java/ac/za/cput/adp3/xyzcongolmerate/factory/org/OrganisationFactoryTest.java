@@ -13,8 +13,7 @@ public class OrganisationFactoryTest {
     public void buildOrganisation() {
         Organisation organisation = OrganisationFactory.buildOrganisation("NPO");
 
-        System.out.println(organisation.getOrgCode());
-
+        Assert.assertSame(organisation,organisation);
         Assert.assertFalse(organisation.getOrgCode().isEmpty());
     }
 }

@@ -16,7 +16,6 @@ public class Helper {
         String className = getClassName(aClass);
 
         char[] splitName;
-
         String processResults = "";
 
         if(className != null)
@@ -27,12 +26,11 @@ public class Helper {
             {
                 if(Character.isUpperCase(splitName[i]))
                 {
-                    //Add individual letters to current string value
                     processResults = processResults + "" +splitName[i];
                 }
             }
         }
-        //concatenated string of capital letters returned
+
         return processResults;
     }
 

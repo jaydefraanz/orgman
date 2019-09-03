@@ -13,8 +13,7 @@ public class RoleFactoryTest {
     public void buildRole() {
       Role role = RoleFactory.buildRole("admin");
 
-        System.out.println(role.getRoleId());
-
+        Assert.assertEquals(role,role);
         Assert.assertFalse(role.getRoleId().isEmpty());
     }
 }

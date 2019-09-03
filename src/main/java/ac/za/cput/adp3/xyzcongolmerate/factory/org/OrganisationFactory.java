@@ -10,8 +10,8 @@ public class OrganisationFactory {
 
     public static Organisation buildOrganisation(String organisationName) {
         return new Organisation.Builder()
-                .orgName(organisationName)
                 .orgCode(Helper.generateRandomGivenSuffix(SUFFIX))
+                .orgName(organisationName)
                 .build();
     }
 }

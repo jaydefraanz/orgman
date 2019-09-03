@@ -13,8 +13,7 @@ public class OrganisationUserFactoryTest {
     public void buildOrganisationUser() {
         OrganisationUser organisationUser = OrganisationUserFactory.buildOrganisationUser("250","jay@mail.com");
 
-        System.out.println(organisationUser.toString());
-
+        Assert.assertSame(organisationUser,organisationUser);
         Assert.assertNotNull(organisationUser);
     }
 }
